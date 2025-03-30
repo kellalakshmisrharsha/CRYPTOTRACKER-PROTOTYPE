@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crypto Portfolio Tracker</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Crypto Portfolio Tracker</h1>
+    </header>
+
+    <main>
+        <section class="portfolio">
+            <h2>My Portfolio</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Coin</th>
+                        <th>Price (USD)</th>
+                        <th>Holdings</th>
+                        <th>Total Value</th>
+                    </tr>
+                </thead>
+                <tbody id="portfolio-body">
+                    <!-- Portfolio data will be inserted here -->
+                </tbody>
+            </table>
+        </section>
+
+        <section class="add-crypto">
+            <h2>Add Cryptocurrency</h2>
+            <input type="text" id="crypto-name" placeholder="Enter coin (e.g., bitcoin)">
+            <input type="number" id="crypto-amount" placeholder="Enter amount">
+            <button onclick="addCrypto()">Add to Portfolio</button>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
